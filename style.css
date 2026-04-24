@@ -470,6 +470,29 @@ section {
     color: var(--primary);
 }
 
+.nav-links a.active {
+    color: var(--primary);
+    font-weight: 700;
+    position: relative;
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 2px;
+    animation: navUnderline 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes navUnderline {
+    from { width: 0; opacity: 0; }
+    to   { width: 100%; opacity: 1; }
+}
+
 /* --- Hero --- */
 .hero {
     padding: 160px 0 100px;

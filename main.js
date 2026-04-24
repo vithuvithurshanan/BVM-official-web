@@ -8,13 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Preloader Removal ---
     const preloader = document.getElementById('preloader');
     if (preloader) {
-        window.addEventListener('load', () => {
+        const removePreloader = () => {
             setTimeout(() => {
                 preloader.style.opacity = '0';
                 preloader.style.visibility = 'hidden';
                 document.body.style.overflow = 'visible';
-            }, 2500);
-        });
+                // Remove preloader from DOM after transition
+                setTimeout(() => preloader.remove(), 1000);
+            }, 1000); // Reduced delay to 1s for better UX
+        };
+
+        if (document.readyState === 'complete') {
+            removePreloader();
+        } else {
+            window.addEventListener('load', removePreloader);
+        }
     }
     
     // --- Scroll Reveal Animation ---
@@ -68,6 +76,48 @@ document.addEventListener('DOMContentLoaded', () => {
                         behavior: 'smooth'
                     });
                 }
+            }
+        });
+    });
+
+    // --- Active Nav Link on Scroll ---
+    const sections = document.querySelectorAll('main section[id]');
+    const navLinkEls = document.querySelectorAll('.nav-links a');
+
+    const setActiveLink = (id) => {
+        navLinkEls.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+            }
+        });
+    };
+
+    const updateActiveNav = () => {
+        const headerHeight = document.querySelector('.header')?.offsetHeight || 80;
+        const scrollMid = window.scrollY + headerHeight + 10;
+
+        let currentId = '';
+        sections.forEach(section => {
+            if (section.offsetTop <= scrollMid) {
+                currentId = section.id;
+            }
+        });
+
+        if (currentId) setActiveLink(currentId);
+    };
+
+    // Run on scroll
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    // Run once on load to set initial state
+    updateActiveNav();
+
+    // Set active immediately on nav click too
+    navLinkEls.forEach(link => {
+        link.addEventListener('click', () => {
+            const href = link.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                setActiveLink(href.substring(1));
             }
         });
     });
