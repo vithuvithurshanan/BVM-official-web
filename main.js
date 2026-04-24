@@ -72,32 +72,62 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Contact Form Handling ---
+    // --- Contact Form Handling (Formspree) ---
     const contactForm = document.getElementById('contact-form');
-    
+
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
-            // Show a simple feedback (can be enhanced with a modal)
+
             const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            
-            submitBtn.textContent = 'Sending...';
+            const originalText = submitBtn.innerHTML;
+
+            submitBtn.innerHTML = 'Sending...';
             submitBtn.disabled = true;
-            
-            // Simulate API call
-            setTimeout(() => {
-                submitBtn.textContent = 'Message Sent!';
-                submitBtn.style.backgroundColor = '#10b981'; // Success green
-                contactForm.reset();
-                
+
+            const firstName = document.getElementById('first-name').value.trim();
+            const lastName  = document.getElementById('last-name').value.trim();
+            const email     = document.getElementById('email').value.trim();
+            const message   = document.getElementById('message').value.trim();
+
+            const formData = {
+                "First Name": firstName,
+                "Last Name":  lastName,
+                "Email Address": email,
+                "Message":    message,
+                _replyto:   email,
+                _subject:   `New Enquiry from ${firstName} ${lastName}`,
+            };
+
+            try {
+                const response = await fetch('https://formspree.io/f/xkokklpw', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: JSON.stringify(formData),
+                });
+
+                if (response.ok) {
+                    submitBtn.innerHTML = '✅ Message Sent!';
+                    submitBtn.style.backgroundColor = '#10b981';
+                    contactForm.reset();
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.style.backgroundColor = '';
+                        submitBtn.disabled = false;
+                    }, 3000);
+                } else {
+                    throw new Error('Server error');
+                }
+            } catch (error) {
+                console.error('Formspree error:', error);
+                submitBtn.innerHTML = '❌ Failed. Try Again.';
+                submitBtn.style.backgroundColor = '#ef4444';
                 setTimeout(() => {
-                    submitBtn.textContent = originalText;
+                    submitBtn.innerHTML = originalText;
                     submitBtn.style.backgroundColor = '';
                     submitBtn.disabled = false;
                 }, 3000);
-            }, 1500);
+            }
         });
     }
 
