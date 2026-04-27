@@ -26,8 +26,8 @@
     <div class="top-bar">
         <div class="container top-bar-content">
             <ul class="top-bar-info">
-                <li><i data-lucide="mail" style="width: 14px;"></i> hello@bvm.dev</li>
-                <li><i data-lucide="phone" style="width: 14px;"></i> +1 (234) 567-890</li>
+                <li><i data-lucide="mail" style="width: 14px;"></i> info@bvmdev.com</li>
+                <li><i data-lucide="phone" style="width: 14px;"></i> +94 72 462 4285</li>
             </ul>
             <ul class="top-bar-social">
                 <li><a href="#"><i data-lucide="facebook" style="width: 14px; color: white;"></i></a></li>
@@ -42,7 +42,7 @@
         <nav class="container nav">
             <div class="logo">
                 <a href="#home">
-                    <img src="assets/logo.png" alt="bvm.Dev Logo" style="height: 45px; vertical-align: middle; mix-blend-mode: multiply;">
+                    <img src="assets/logo.png" alt="bvm.Dev Logo" style="height: 80px; vertical-align: middle; mix-blend-mode: multiply; filter: contrast(1000%) brightness(1.1) grayscale(1);">
                 </a>
             </div>
             <ul class="nav-links">
@@ -361,7 +361,16 @@
                                 </div>
                                 <div>
                                     <p style="margin: 0; font-size: 0.8rem; color: var(--text-muted);">Email Address</p>
-                                    <h4 style="margin: 0;">hello@bvm.dev</h4>
+                                    <h4 style="margin: 0;">info@bvmdev.com</h4>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                                <div style="width: 50px; height: 50px; background: var(--bg-soft); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div>
+                                    <p style="margin: 0; font-size: 0.8rem; color: var(--text-muted);">Phone Number</p>
+                                    <h4 style="margin: 0;">+94 72 462 4285</h4>
                                 </div>
                             </li>
                             <li style="display: flex; align-items: center; gap: 15px;">
@@ -379,28 +388,31 @@
                         <form id="contact-form">
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                                 <div class="form-group">
-                                    <label for="first-name">First Name</label>
+                                    <label for="first-name">First Name <span style="color: red;">*</span></label>
                                     <input type="text" id="first-name" name="First Name" placeholder="John" required style="background: var(--bg-soft); border: none;">
                                 </div>
                                 <div class="form-group">
-                                    <label for="last-name">Last Name</label>
+                                    <label for="last-name">Last Name <span style="color: red;">*</span></label>
                                     <input type="text" id="last-name" name="Last Name" placeholder="Doe" required style="background: var(--bg-soft); border: none;">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email</label>
+                                <label for="email">Email <span style="color: red;">*</span></label>
                                 <input type="email" id="email" name="Email Address" placeholder="john@example.com" required style="background: var(--bg-soft); border: none;">
                             </div>
                             <div class="form-group">
                                 <label for="message">Message</label>
                                 <textarea id="message" name="Message" rows="4" placeholder="How can we help?" required style="background: var(--bg-soft); border: none;"></textarea>
                             </div>
-                            <div class="form-group" style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 1.5rem;">
-                                <input type="checkbox" id="terms" required style="width: 18px; height: 18px; margin-top: 2px; accent-color: var(--primary); cursor: pointer; flex-shrink: 0;">
-                                <label for="terms" style="font-size: 0.9rem; color: var(--text-body); cursor: pointer; line-height: 1.5;">
-                                    I agree to the <a href="#" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Terms & Conditions</a> and <a href="#" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Privacy Policy</a>
-                                </label>
-                            </div>
+                            <div class="form-group" style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 0.5rem;">
+                                 <input type="checkbox" id="terms" required style="width: 18px; height: 18px; margin-top: 2px; accent-color: var(--primary); cursor: pointer; flex-shrink: 0;">
+                                 <label for="terms" style="font-size: 0.9rem; color: var(--text-body); cursor: pointer; line-height: 1.5;">
+                                     I agree to the <a href="#" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Terms & Conditions</a> and <a href="#" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Privacy Policy</a> <span style="color: red;">*</span>
+                                 </label>
+                             </div>
+                             <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1.5rem; padding: 10px; background: var(--bg-soft); border-radius: 8px;">
+                                 <strong>Terms Summary:</strong> We respect your privacy. By submitting, you agree that we may process your data to respond to your inquiry. We never share your data with third parties for marketing.
+                             </div>
                             <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px;">Send Message</button>
                         </form>
                     </div>
@@ -413,7 +425,7 @@
         <div class="container">
             <div style="display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.5fr; gap: 4rem; padding-bottom: 60px; border-bottom: 1px solid rgba(255,255,255,0.1);">
                 <div>
-                    <img src="assets/logo.png" alt="bvm.Dev Logo" style="height: 40px; margin-bottom: 1.5rem; mix-blend-mode: screen; filter: invert(1);">
+                    <img src="assets/logo.png" alt="bvm.Dev Logo" style="height: 70px; margin-bottom: 1.5rem; mix-blend-mode: screen; filter: invert(1);">
                     <p style="color: rgba(255,255,255,0.7);">Building tomorrow's technology, today. We provide cutting-edge IT solutions for businesses worldwide.</p>
                     <div style="display: flex; gap: 15px; margin-top: 2rem;">
                         <a href="#" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;"><i data-lucide="facebook" style="width: 18px;"></i></a>
