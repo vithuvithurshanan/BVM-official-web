@@ -8,13 +8,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Preloader Removal ---
     const preloader = document.getElementById('preloader');
     if (preloader) {
+        const hidePreloader = () => {
+            preloader.style.opacity = '0';
+            preloader.style.visibility = 'hidden';
+            document.body.style.overflow = 'visible';
+            document.body.style.pointerEvents = 'auto';
+        };
+
         window.addEventListener('load', () => {
-            setTimeout(() => {
-                preloader.style.opacity = '0';
-                preloader.style.visibility = 'hidden';
-                document.body.style.overflow = 'visible';
-            }, 2500);
+            setTimeout(hidePreloader, 2500); 
         });
+
+        // Fallback: Force hide after 6 seconds if load event doesn't fire
+        setTimeout(hidePreloader, 6000);
     }
     
     // --- Scroll Reveal Animation ---
@@ -44,6 +50,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // --- Mobile Menu Toggle ---
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinksList = document.querySelector('.nav-links');
+
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinksList.classList.toggle('active');
+            document.body.style.overflow = navLinksList.classList.contains('active') ? 'hidden' : 'visible';
+        });
+    }
+
     // --- Smooth Scroll for Navigation ---
     const navLinks = document.querySelectorAll('.nav-links a, .nav-cta a, .hero-btns a, .footer-links a');
     
@@ -51,6 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', (e) => {
             const href = link.getAttribute('href');
             
+            // Close mobile menu on link click
+            if (navLinksList.classList.contains('active')) {
+                menuToggle.classList.remove('active');
+                navLinksList.classList.remove('active');
+                document.body.style.overflow = 'visible';
+            }
+
             if (href.startsWith('#')) {
                 e.preventDefault();
                 const targetId = href.substring(1);
@@ -107,9 +132,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 if (response.ok) {
+                    // Success Notification
+                    const toast = document.getElementById('toast');
+                    toast.classList.add('active');
+                    
                     submitBtn.innerHTML = '✅ Message Sent!';
                     submitBtn.style.backgroundColor = '#10b981';
                     contactForm.reset();
+
+                    // Hide toast after 5 seconds
+                    setTimeout(() => {
+                        toast.classList.remove('active');
+                    }, 5000);
+
                     setTimeout(() => {
                         submitBtn.innerHTML = originalText;
                         submitBtn.style.backgroundColor = '';
@@ -165,6 +200,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 top: 0,
                 behavior: 'smooth'
             });
+        });
+    }
+
+    // --- Toast Close ---
+    const toastClose = document.getElementById('toastClose');
+    const toast = document.getElementById('toast');
+    if (toastClose && toast) {
+        toastClose.addEventListener('click', () => {
+            toast.classList.remove('active');
         });
     }
 
