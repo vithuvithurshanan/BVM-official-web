@@ -29,12 +29,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('active');
+                const target = entry.target;
+                
+                // --- Automatic Staggering for Grid Items ---
+                const parentGrid = target.closest('.services-grid, .projects-grid, .check-list');
+                if (parentGrid) {
+                    const children = Array.from(parentGrid.querySelectorAll('.reveal, li'));
+                    const index = children.indexOf(target);
+                    if (index !== -1) {
+                        target.style.transitionDelay = `${index * 0.1}s`;
+                    }
+                }
+                
+                target.classList.add('active');
+            } else {
+                // Optional: Remove active class when element leaves viewport 
+                // to allow animation to replay on next scroll
+                entry.target.classList.remove('active');
             }
         });
     }, {
-        threshold: 0.15,
-        rootMargin: "0px 0px -50px 0px"
+        threshold: 0.1,
+        rootMargin: "0px"
     });
     
     revealElements.forEach(el => revealObserver.observe(el));
@@ -48,6 +64,22 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             header.classList.remove('scrolled');
         }
+
+        // --- Active Navigation Link on Scroll ---
+        const sections = document.querySelectorAll('section[id]');
+        const scrollPosition = window.scrollY + 100; // Offset for sticky header
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute('id');
+            const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+
+            if (navLink && scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                document.querySelectorAll('.nav-links a').forEach(link => link.classList.remove('active'));
+                navLink.classList.add('active');
+            }
+        });
     });
 
     // --- Mobile Menu Toggle ---
