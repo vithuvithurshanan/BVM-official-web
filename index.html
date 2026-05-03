@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bvm.Dev | Innovating the Future of Code</title>
+    <title>BVM ᴅᴇᴠ.com | Innovating the Future of Code</title>
     <meta name="description"
-        content="bvm.Dev is a premier software development company specializing in web, app, and AI solutions. We transform your ideas into powerful digital realities.">
+        content="BVM ᴅᴇᴠ.com is a premier software development company specializing in web, app, and AI solutions. We transform your ideas into powerful digital realities.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bvmdev.com/">
-    <meta property="og:title" content="bvm.Dev | Innovating the Future of Code">
+    <meta property="og:title" content="BVM ᴅᴇᴠ.com | Innovating the Future of Code">
     <meta property="og:description"
         content="Premier software development company specializing in web, app, and AI solutions.">
     <meta property="og:image" content="assets/og-image.png">
@@ -19,12 +19,13 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://bvmdev.com/">
-    <meta property="twitter:title" content="bvm.Dev | Innovating the Future of Code">
+    <meta property="twitter:title" content="BVM ᴅᴇᴠ.com | Innovating the Future of Code">
     <meta property="twitter:description"
         content="Premier software development company specializing in web, app, and AI solutions.">
     <meta property="twitter:image" content="assets/og-image.png">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -34,26 +35,16 @@
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader-logo">
-            <div class="bvm-anim">
-                <span class="letter">B</span>
-                <span class="letter">V</span>
-                <span class="letter">M</span>
+            <div class="bvm-anim-container">
+                <div class="bvm-letters">
+                    <span class="letter letter-b">B</span>
+                    <span class="letter letter-v">V</span>
+                    <span class="letter letter-m">M</span>
+                </div>
+                <div class="bvm-logo-final">
+                    <img src="assets/logo-white.png" alt="BVM Logo">
+                </div>
             </div>
-        </div>
-    </div>
-
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container top-bar-content">
-            <ul class="top-bar-info">
-                <li><i data-lucide="mail" style="width: 14px;"></i> info@bvmdev.com</li>
-                <li><i data-lucide="phone" style="width: 14px;"></i> +94 72 462 4285</li>
-            </ul>
-            <ul class="top-bar-social">
-                <li><a href="#"><i data-lucide="facebook" style="width: 14px; color: white;"></i></a></li>
-                <li><a href="#"><i data-lucide="twitter" style="width: 14px; color: white;"></i></a></li>
-                <li><a href="#"><i data-lucide="linkedin" style="width: 14px; color: white;"></i></a></li>
-            </ul>
         </div>
     </div>
 
@@ -61,19 +52,34 @@
     <header class="header">
         <nav class="container nav">
             <div class="logo">
-                <a href="#home">
-                    <img src="assets/logo.png" alt="bvm.Dev Logo" class="header-logo">
+                <a href="#home" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                    <img src="assets/logo-white.png" alt="BVM ᴅᴇᴠ Logo" class="header-logo">
+                    <span style="color: white; font-weight: 700; font-size: 1.2rem; letter-spacing: 1px;">BVM ᴅᴇᴠ</span>
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="active">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#projects">WORK</a></li>
+                <li><a href="#contact">CONTACTS</a></li>
             </ul>
-            <div class="nav-cta">
-                <a href="#contact" class="btn btn-primary">Get Started <i data-lucide="arrow-right"
-                        style="margin-left: 8px; width: 18px;"></i></a>
+            <div class="nav-right" style="display: flex; gap: 15px; align-items: center;">
+                <a href="https://wa.me/94724624285" target="_blank" rel="noopener noreferrer" class="nav-call-btn" style="display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); color: white; padding: 8px 16px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 14px; border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s ease;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    +94 72 462 4285
+                </a>
+                <div class="nav-socials">
+                    <a href="https://www.linkedin.com/in/bvm-ᴅᴇᴠ-649692406" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61588870863030" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="https://www.instagram.com/bvmdev?igsh=cXduNmU2YTlndjhu" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                </div>
             </div>
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
                 <span></span>
@@ -86,38 +92,19 @@
     <main>
         <!-- Hero Section -->
         <section class="hero" id="home">
+        <canvas id="heroCanvas" class="hero-canvas"></canvas>
             <div class="container">
-                <div class="hero-grid">
-                    <div class="hero-content">
-                        <div class="experience-badge reveal">
-                            <i data-lucide="award"></i> Best IT Solutions 2026
-                        </div>
-                        <h1 class="reveal">
-                            Providing The Best <span style="color: var(--primary);">IT Solutions</span> For Your
-                            Business.
-                        </h1>
-                        <p class="reveal" style="transition-delay: 0.1s;">
-                            We are a professional software development power-house dedicated to building world-class
-                            digital solutions that drive growth and innovation.
-                        </p>
-                        <div class="hero-btns reveal" style="transition-delay: 0.2s;">
-                            <a href="#services" class="btn btn-primary">Our Services <i data-lucide="chevron-right"
-                                    style="margin-left: 5px; width: 18px;"></i></a>
-                            <a href="#about" class="btn btn-outline" style="margin-left: 1rem;">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="hero-image-wrapper reveal">
-                        <img src="assets/team.png" alt="Team Work" class="hero-img">
-                        <div class="floating-card">
-                            <div
-                                style="width: 50px; height: 50px; background: var(--primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white;">
-                                <i data-lucide="check-circle"></i>
-                            </div>
-                            <div>
-                                <h4 style="margin: 0;">100% Success</h4>
-                                <p style="margin: 0; font-size: 0.8rem;">Project Satisfaction</p>
-                            </div>
-                        </div>
+                <div class="hero-content-center">
+                    <h1 class="reveal hero-title">
+                        Transforming businesses with <span class="gradient-text">Intelligent Solutions</span> and AI Engineering Services
+                    </h1>
+                    <p class="reveal hero-subtitle" style="transition-delay: 0.1s;">
+                        BVM ᴅᴇᴠ builds modern, scalable, and high-performance digital solutions tailored to the AI-first era.
+                    </p>
+                    <div class="hero-btns reveal" style="transition-delay: 0.2s;">
+                        <a href="#services" class="btn btn-primary">Our Services <i data-lucide="chevron-right"
+                                style="margin-left: 5px; width: 18px;"></i></a>
+                        <a href="#contact" class="btn btn-outline" style="margin-left: 1rem; border-color: rgba(255,255,255,0.3); color: white;">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -126,33 +113,19 @@
         <!-- Brands Section -->
         <section class="brands-section">
             <div class="container brands-container">
-                <div class="brand-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
-                        alt="Brand 1"></div>
-                <div class="brand-item"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Brand 2">
-                </div>
-                <div class="brand-item"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"
-                        alt="Brand 3"></div>
-                <div class="brand-item"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Brand 4">
-                </div>
-                <div class="brand-item"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg"
-                        alt="Brand 5"></div>
+                <div class="brand-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React"></div>
+                <div class="brand-item"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js"></div>
+                <div class="brand-item"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"></div>
+                <div class="brand-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="TypeScript"></div>
+                <div class="brand-item"><img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="Flutter"></div>
+                <div class="brand-item"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" alt="Next.js"></div>
                 <!-- Duplicated for Infinite Scroll -->
-                <div class="brand-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
-                        alt="Brand 1"></div>
-                <div class="brand-item"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Brand 2">
-                </div>
-                <div class="brand-item"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"
-                        alt="Brand 3"></div>
-                <div class="brand-item"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Brand 4">
-                </div>
-                <div class="brand-item"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg"
-                        alt="Brand 5"></div>
+                <div class="brand-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React"></div>
+                <div class="brand-item"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js"></div>
+                <div class="brand-item"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"></div>
+                <div class="brand-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="TypeScript"></div>
+                <div class="brand-item"><img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="Flutter"></div>
+                <div class="brand-item"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" alt="Next.js"></div>
             </div>
         </section>
 
@@ -167,94 +140,109 @@
                 <div class="services-grid">
                     <div class="synvo-card reveal">
                         <div class="icon-box">
-                            <i data-lucide="code-2"></i>
+                            <i data-lucide="globe"></i>
                         </div>
-                        <h3>Web Development</h3>
-                        <p>High-performance, scalable web applications built with modern frameworks and best practices.
-                        </p>
-                        <a href="#" class="btn-link"
-                            style="margin-top: 1.5rem; display: inline-block; font-weight: 700; color: var(--primary); text-decoration: none;">Read
-                            More &rarr;</a>
+                        <h3>Business Websites</h3>
+                        <p>Professional, modern, and high-performance websites tailored to your brand's unique identity.</p>
+                        <a href="#contact" class="btn-link get-service-btn" data-service="Business Website"
+                            style="margin-top: 1.5rem; display: inline-block; font-weight: 700; color: var(--primary); text-decoration: none;">Get
+                            Service &rarr;</a>
                     </div>
                     <div class="synvo-card reveal" style="transition-delay: 0.1s;">
                         <div class="icon-box">
-                            <i data-lucide="smartphone"></i>
+                            <i data-lucide="monitor"></i>
                         </div>
-                        <h3>Mobile Apps</h3>
-                        <p>Native and cross-platform mobile experiences that engage users and drive growth.</p>
-                        <a href="#" class="btn-link"
-                            style="margin-top: 1.5rem; display: inline-block; font-weight: 700; color: var(--primary); text-decoration: none;">Read
-                            More &rarr;</a>
+                        <h3>Web Applications</h3>
+                        <p>Scalable and secure web-based systems designed to streamline complex business processes.</p>
+                        <a href="#contact" class="btn-link get-service-btn" data-service="Web Application"
+                            style="margin-top: 1.5rem; display: inline-block; font-weight: 700; color: var(--primary); text-decoration: none;">Get
+                            Service &rarr;</a>
                     </div>
                     <div class="synvo-card reveal" style="transition-delay: 0.2s;">
                         <div class="icon-box">
-                            <i data-lucide="cpu"></i>
+                            <i data-lucide="smartphone"></i>
                         </div>
-                        <h3>AI & Automation</h3>
-                        <p>Intelligent solutions that streamline operations and provide data-driven insights.</p>
-                        <a href="#" class="btn-link"
-                            style="margin-top: 1.5rem; display: inline-block; font-weight: 700; color: var(--primary); text-decoration: none;">Read
-                            More &rarr;</a>
+                        <h3>Mobile App Development</h3>
+                        <p>High-quality iOS and Android applications built for seamless performance and engagement.</p>
+                        <a href="#contact" class="btn-link get-service-btn" data-service="Mobile App"
+                            style="margin-top: 1.5rem; display: inline-block; font-weight: 700; color: var(--primary); text-decoration: none;">Get
+                            Service &rarr;</a>
                     </div>
                     <div class="synvo-card reveal" style="transition-delay: 0.3s;">
+                        <div class="icon-box">
+                            <i data-lucide="settings"></i>
+                        </div>
+                        <h3>Custom Software Solutions</h3>
+                        <p>Tailor-made software built with quality and reliability to solve your unique business challenges.</p>
+                        <a href="#contact" class="btn-link get-service-btn" data-service="Custom Software"
+                            style="margin-top: 1.5rem; display: inline-block; font-weight: 700; color: var(--primary); text-decoration: none;">Get
+                            Service &rarr;</a>
+                    </div>
+                    <div class="synvo-card reveal" style="transition-delay: 0.4s;">
                         <div class="icon-box">
                             <i data-lucide="palette"></i>
                         </div>
                         <h3>UI/UX Design</h3>
-                        <p>User-centric designs that are visually stunning and intuitive to navigate.</p>
-                        <a href="#" class="btn-link"
-                            style="margin-top: 1.5rem; display: inline-block; font-weight: 700; color: var(--primary); text-decoration: none;">Read
-                            More &rarr;</a>
+                        <p>Clean, user-friendly, and intuitive designs focused on delivering the best user experience.</p>
+                        <a href="#contact" class="btn-link get-service-btn" data-service="UI/UX Design"
+                            style="margin-top: 1.5rem; display: inline-block; font-weight: 700; color: var(--primary); text-decoration: none;">Get
+                            Service &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Why Choose Us -->
-        <section class="why-choose-us" style="padding: 120px 0; background: var(--bg-soft);">
-            <div class="container"
-                style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-                <div class="reveal">
-                    <span class="section-tag">Why Choose Us</span>
-                    <h2>We Deliver High Quality <span style="color: var(--primary);">IT Solutions</span> For You.</h2>
-                    <p style="margin: 1.5rem 0 3rem;">Our process is driven by innovation and excellence. We ensure that
-                        every project we undertake meets the highest industry standards.</p>
 
-                    <div class="feature-item">
-                        <div class="feature-icon"><i data-lucide="shield-check"></i></div>
-                        <div>
-                            <h4>Data Security</h4>
-                            <p>We prioritize your data security with industry-leading encryption and best practices.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon" style="color: #00D1FF;"><i data-lucide="zap"></i></div>
-                        <div>
-                            <h4>Fast Performance</h4>
-                            <p>Optimized for speed and efficiency to ensure seamless user experiences.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon" style="color: #E91E63;"><i data-lucide="users"></i></div>
-                        <div>
-                            <h4>Expert Team</h4>
-                            <p>Our team consists of senior engineers and designers with years of experience.</p>
-                        </div>
-                    </div>
+
+        <!-- About Section -->
+        <section class="about" id="about" style="padding: 120px 0;">
+            <div class="container about-flex">
+                <div class="about-image reveal reveal-left" style="position: relative;">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+                        alt="About Synvo"
+                        style="width: 100%; border-radius: var(--border-radius); border-bottom-right-radius: 100px;">
                 </div>
-                <div class="reveal feature-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80"
-                        alt="Features" class="feature-img">
-                    <div class="security-badge">
-                        <h3>100%</h3>
-                        <p>Secure Service</p>
-                    </div>
+                <div class="about-text reveal reveal-right">
+                    <span class="section-tag">About Company</span>
+                    <h2>We Are The Best <span style="color: var(--primary);">IT Solution</span> Provider.</h2>
+                    <p>We focus on delivering clean, user-friendly, and efficient systems tailored to each client's needs. From idea to deployment, we ensure every product is built with quality, performance, and reliability in mind.</p>
+                    <p style="margin-top: 1.5rem; font-weight: 500; color: var(--text-heading);">Whether you're a startup or an established business, BVM ᴅᴇᴠ helps turn your ideas into powerful digital products. Let's build something impactful together.</p>
+
+                    <ul class="check-list"
+                        style="list-style: none; margin: 2.5rem 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px;">
+                        <li class="reveal" style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: var(--secondary);">
+                            <i data-lucide="check-circle" style="color: var(--primary); width: 22px;"></i> IT Solutions
+                        </li>
+                        <li class="reveal" style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: var(--secondary);">
+                            <i data-lucide="check-circle" style="color: var(--primary); width: 22px;"></i> Data Guard
+                        </li>
+                        <li class="reveal" style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: var(--secondary);">
+                            <i data-lucide="check-circle" style="color: var(--primary); width: 22px;"></i> Web Applications
+                        </li>
+                        <li class="reveal" style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: var(--secondary);">
+                            <i data-lucide="check-circle" style="color: var(--primary); width: 22px;"></i> Mobile Development
+                        </li>
+                        <li class="reveal" style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: var(--secondary);">
+                            <i data-lucide="check-circle" style="color: var(--primary); width: 22px;"></i> UI/UX Design
+                        </li>
+                        <li class="reveal" style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: var(--secondary);">
+                            <i data-lucide="check-circle" style="color: var(--primary); width: 22px;"></i> Cloud Computing
+                        </li>
+                        <li class="reveal" style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: var(--secondary);">
+                            <i data-lucide="check-circle" style="color: var(--primary); width: 22px;"></i> Custom Software
+                        </li>
+                        <li class="reveal" style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: var(--secondary);">
+                            <i data-lucide="check-circle" style="color: var(--primary); width: 22px;"></i> 24/7 Support
+                        </li>
+                    </ul>
+
+                    <a href="#contact" class="btn btn-primary">Discover More</a>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section class="projects" id="projects" style="background: var(--bg-soft); padding: 120px 0;">
+        <section class="projects" id="projects" style="padding: 120px 0;">
             <div class="container">
                 <div class="section-header reveal" style="text-align: center; margin: 0 auto 5rem; max-width: 800px;">
                     <span class="section-tag">Latest Portfolio</span>
@@ -304,104 +292,10 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <section class="about" id="about" style="padding: 120px 0;">
-            <div class="container about-flex">
-                <div class="about-image reveal" style="position: relative;">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
-                        alt="About Synvo"
-                        style="width: 100%; border-radius: var(--border-radius); border-bottom-right-radius: 100px;">
-                    <div class="experience-floating"
-                        style="position: absolute; top: -30px; right: -30px; background: var(--primary); color: white; padding: 30px; border-radius: 20px; text-align: center; box-shadow: 0 20px 40px rgba(92, 39, 254, 0.3);">
-                        <h2 style="color: white; font-size: 3rem; margin: 0;">25+</h2>
-                        <p style="margin: 0; font-size: 0.9rem; font-weight: 600;">Years Of Experience</p>
-                    </div>
-                </div>
-                <div class="about-text reveal">
-                    <span class="section-tag">About Company</span>
-                    <h2>We Are The Best <span style="color: var(--primary);">IT Solution</span> Provider.</h2>
-                    <p>Over the years, we have built a reputation for delivering high-impact digital solutions. We don't
-                        just write code; we solve complex business problems with cutting-edge technology.</p>
-
-                    <ul class="check-list"
-                        style="list-style: none; margin: 2rem 0; display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-                        <li
-                            style="display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--secondary);">
-                            <i data-lucide="check-circle" style="color: var(--primary); width: 20px;"></i> IT Solution
-                        </li>
-                        <li
-                            style="display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--secondary);">
-                            <i data-lucide="check-circle" style="color: var(--primary); width: 20px;"></i> Data Guard
-                        </li>
-                        <li
-                            style="display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--secondary);">
-                            <i data-lucide="check-circle" style="color: var(--primary); width: 20px;"></i> Cyber
-                            Security</li>
-                        <li
-                            style="display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--secondary);">
-                            <i data-lucide="check-circle" style="color: var(--primary); width: 20px;"></i> Web Apps</li>
-                    </ul>
-
-                    <a href="#contact" class="btn btn-primary">Discover More</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials -->
-        <section class="testimonials" style="padding: 120px 0;">
-            <div class="container">
-                <div class="section-header reveal" style="text-align: center; margin: 0 auto 5rem; max-width: 800px;">
-                    <span class="section-tag">Testimonials</span>
-                    <h2 style="max-width: 100%;">What Our <span style="color: var(--primary);">Clients</span> Say About
-                        Us</h2>
-                </div>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
-                    <div class="testimonial-card reveal">
-                        <i data-lucide="quote" class="quote-icon"></i>
-                        <p>"bvm.Dev transformed our manual processes into a sleek, automated system. Their technical
-                            expertise is unmatched in the industry."</p>
-                        <div class="testimonial-user">
-                            <img src="https://i.pravatar.cc/150?u=1" alt="User" class="user-img">
-                            <div>
-                                <h4 style="margin: 0;">Sarah Johnson</h4>
-                                <p style="margin: 0; font-size: 0.8rem; color: var(--text-muted);">CEO at TechPulse</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card reveal" style="transition-delay: 0.1s;">
-                        <i data-lucide="quote" class="quote-icon"></i>
-                        <p>"The team delivered our mobile app ahead of schedule and with incredible attention to detail.
-                            Highly recommend for any IT project."</p>
-                        <div class="testimonial-user">
-                            <img src="https://i.pravatar.cc/150?u=2" alt="User" class="user-img">
-                            <div>
-                                <h4 style="margin: 0;">Michael Chen</h4>
-                                <p style="margin: 0; font-size: 0.8rem; color: var(--text-muted);">Product Manager at
-                                    SwiftApp</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card reveal" style="transition-delay: 0.2s;">
-                        <i data-lucide="quote" class="quote-icon"></i>
-                        <p>"Exceptional support and communication. They understood our requirements perfectly and
-                            exceeded our expectations."</p>
-                        <div class="testimonial-user">
-                            <img src="https://i.pravatar.cc/150?u=3" alt="User" class="user-img">
-                            <div>
-                                <h4 style="margin: 0;">Emma Williamson</h4>
-                                <p style="margin: 0; font-size: 0.8rem; color: var(--text-muted);">Founder of BloomMedia
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- FAQ Section -->
-        <section class="faq" style="padding: 120px 0; background: var(--bg-soft);">
+        <section class="faq" style="padding: 120px 0;">
             <div class="container" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem;">
-                <div class="reveal">
+                <div class="reveal reveal-left">
                     <span class="section-tag">Common Inquiries</span>
                     <h2>Frequent Asked <span style="color: var(--primary);">Questions</span>.</h2>
                     <p style="margin: 1.5rem 0 3rem;">We answer some of the most common questions our clients ask about
@@ -409,8 +303,8 @@
                     <img src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?auto=format&fit=crop&w=800&q=80"
                         alt="FAQ" style="width: 100%; border-radius: var(--border-radius);">
                 </div>
-                <div class="reveal">
-                    <div class="faq-item active">
+                <div class="reveal reveal-right">
+                    <div class="faq-item reveal faq-active">
                         <div class="faq-header">
                             <h4>How long does a typical project take?</h4>
                             <i data-lucide="chevron-down"></i>
@@ -420,7 +314,7 @@
                                 takes 8-12 weeks from design to deployment.</p>
                         </div>
                     </div>
-                    <div class="faq-item">
+                    <div class="faq-item reveal faq-active">
                         <div class="faq-header">
                             <h4>Do you provide ongoing support?</h4>
                             <i data-lucide="chevron-down"></i>
@@ -430,7 +324,7 @@
                                 stay updated and secure.</p>
                         </div>
                     </div>
-                    <div class="faq-item">
+                    <div class="faq-item reveal faq-active">
                         <div class="faq-header">
                             <h4>Can you help with app design too?</h4>
                             <i data-lucide="chevron-down"></i>
@@ -440,14 +334,13 @@
                                 beautiful interfaces.</p>
                         </div>
                     </div>
-                    <div class="faq-item">
+                    <div class="faq-item reveal faq-active">
                         <div class="faq-header">
                             <h4>What technologies do you use?</h4>
                             <i data-lucide="chevron-down"></i>
                         </div>
                         <div class="faq-body">
-                            <p>We work with modern stacks including React, Next.js, Node.js, Python, and cloud services
-                                like AWS and Google Cloud.</p>
+                            <p>We specialize in modern technologies including Angular, Python, TypeScript, React, and Next.js, along with advanced AI LLM integrations and intelligent automation solutions.</p>
                         </div>
                     </div>
                 </div>
@@ -458,7 +351,7 @@
         <section class="contact" id="contact" style="padding: 120px 0;">
             <div class="container">
                 <div class="contact-grid">
-                    <div class="contact-info reveal">
+                    <div class="contact-info reveal reveal-left">
                         <span class="section-tag">Contact Us</span>
                         <h2>Ready To Start Your <br><span style="color: var(--primary);">Next Project</span>?</h2>
                         <p>Fill out the form or reach out to us directly to discuss your business needs and how we can
@@ -471,17 +364,17 @@
                                 </div>
                                 <div>
                                     <p style="margin: 0; font-size: 0.8rem; color: var(--text-muted);">Email Address</p>
-                                    <h4 style="margin: 0;">info@bvmdev.com</h4>
+                                    <h4 style="margin: 0;"><a href="mailto:info@bvmdev.com" style="color: inherit; text-decoration: none;">info@bvmdev.com</a></h4>
                                 </div>
                             </li>
                             <li style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
                                 <div
                                     style="width: 50px; height: 50px; background: var(--bg-soft); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary);">
-                                    <i data-lucide="phone"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                                 </div>
                                 <div>
                                     <p style="margin: 0; font-size: 0.8rem; color: var(--text-muted);">Phone Number</p>
-                                    <h4 style="margin: 0;">+94 72 462 4285</h4>
+                                    <h4 style="margin: 0;"><a href="tel:+94724624285" style="color: inherit; text-decoration: none;">+94 72 462 4285</a></h4>
                                 </div>
                             </li>
                             <li style="display: flex; align-items: center; gap: 15px;">
@@ -497,7 +390,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="contact-form-wrapper reveal">
+                    <div class="contact-form-wrapper reveal reveal-right">
                         <form id="contact-form">
                             <div class="form-row">
                                 <div class="form-group">
@@ -517,6 +410,11 @@
                                     required style="background: var(--bg-soft); border: none;">
                             </div>
                             <div class="form-group">
+                                <label for="subject">Subject <span style="color: red;">*</span></label>
+                                <input type="text" id="subject" name="Subject" placeholder="How can we help?" required
+                                    style="background: var(--bg-soft); border: none;">
+                            </div>
+                            <div class="form-group">
                                 <label for="message">Message</label>
                                 <textarea id="message" name="Message" rows="4" placeholder="How can we help?" required
                                     style="background: var(--bg-soft); border: none;"></textarea>
@@ -527,9 +425,9 @@
                                     style="width: 18px; height: 18px; margin-top: 2px; accent-color: var(--primary); cursor: pointer; flex-shrink: 0;">
                                 <label for="terms"
                                     style="font-size: 0.9rem; color: var(--text-body); cursor: pointer; line-height: 1.5;">
-                                    I agree to the <a href="#"
+                                    I agree to the <a href="terms.html"
                                         style="color: var(--primary); font-weight: 700; text-decoration: underline;">Terms
-                                        & Conditions</a> and <a href="#"
+                                        & Conditions</a> and <a href="privacy.html"
                                         style="color: var(--primary); font-weight: 700; text-decoration: underline;">Privacy
                                         Policy</a> <span style="color: red;">*</span>
                                 </label>
@@ -553,7 +451,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <img src="assets/logo.png" alt="bvm.Dev Logo" class="footer-logo">
+                    <img src="assets/logo-white.png" alt="BVM ᴅᴇᴠ Logo" class="footer-logo">
                     <p>Building tomorrow's technology, today. We provide cutting-edge IT solutions for businesses
                         worldwide.</p>
                     <div class="footer-social">
@@ -561,18 +459,24 @@
                         <a href="#"><i data-lucide="twitter"></i></a>
                         <a href="#"><i data-lucide="linkedin"></i></a>
                     </div>
+                    <div class="footer-contact" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 10px;">
+                        <a href="mailto:info@bvmdev.com" style="color: rgba(255,255,255,0.7); text-decoration: none; display: flex; align-items: center; gap: 10px; font-size: 0.9rem;">
+                            <i data-lucide="mail" style="width: 16px; color: var(--primary);"></i> info@bvmdev.com
+                        </a>
+                        <a href="tel:+94724624285" style="color: rgba(255,255,255,0.7); text-decoration: none; display: flex; align-items: center; gap: 10px; font-size: 0.9rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="color: var(--primary);"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            +94 72 462 4285
+                        </a>
+                    </div>
                 </div>
                 <div>
                     <h4 style="color: white; margin-bottom: 2rem;">Quick Links</h4>
                     <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
-                        <li><a href="#services"
-                                style="color: rgba(255,255,255,0.7); text-decoration: none;">Services</a></li>
-                        <li><a href="#about" style="color: rgba(255,255,255,0.7); text-decoration: none;">About Us</a>
-                        </li>
-                        <li><a href="#projects" style="color: rgba(255,255,255,0.7); text-decoration: none;">Our
-                                Work</a></li>
-                        <li><a href="#contact" style="color: rgba(255,255,255,0.7); text-decoration: none;">Contact</a>
-                        </li>
+                        <li><a href="#home" style="color: rgba(255,255,255,0.7); text-decoration: none;">Home</a></li>
+                        <li><a href="#services" style="color: rgba(255,255,255,0.7); text-decoration: none;">Services</a></li>
+                        <li><a href="#about" style="color: rgba(255,255,255,0.7); text-decoration: none;">About Us</a></li>
+                        <li><a href="#projects" style="color: rgba(255,255,255,0.7); text-decoration: none;">Work</a></li>
+                        <li><a href="#contact" style="color: rgba(255,255,255,0.7); text-decoration: none;">Contacts</a></li>
                     </ul>
                 </div>
                 <div>
@@ -581,25 +485,14 @@
                         <li><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Web Dev</a></li>
                         <li><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Mobile Apps</a>
                         </li>
-                        <li><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Cloud Computing</a>
-                        </li>
-                        <li><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Cyber Security</a>
+                        <li><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">UI/UX Design</a>
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h4 style="color: white; margin-bottom: 2rem;">Newsletter</h4>
-                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 1.5rem;">Subscribe to get latest updates and
-                        news.</p>
-                    <div style="display: flex; gap: 10px;">
-                        <input type="email" placeholder="Email Address"
-                            style="padding: 12px; border-radius: 8px; border: none; flex: 1; background: rgba(255,255,255,0.1); color: white;">
-                        <button class="btn btn-primary" style="padding: 12px;"><i data-lucide="send"></i></button>
-                    </div>
-                </div>
+
             </div>
             <div style="text-align: center; padding-top: 30px; color: rgba(255,255,255,0.5); font-size: 0.9rem;">
-                &copy; 2026 bvm.Dev. All rights reserved. Designed with Synvo Inspiration.
+                &copy; 2026 BVM ᴅᴇᴠ. All rights reserved.
             </div>
         </div>
     </footer>
