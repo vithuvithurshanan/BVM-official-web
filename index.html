@@ -35,10 +35,15 @@
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader-logo">
-            <div class="bvm-anim">
-                <span class="letter">B</span>
-                <span class="letter">V</span>
-                <span class="letter">M</span>
+            <div class="bvm-anim-container">
+                <div class="bvm-letters">
+                    <span class="letter letter-b">B</span>
+                    <span class="letter letter-v">V</span>
+                    <span class="letter letter-m">M</span>
+                </div>
+                <div class="bvm-logo-final">
+                    <img src="assets/logo-white.png" alt="BVM Logo">
+                </div>
             </div>
         </div>
     </div>
@@ -47,26 +52,33 @@
     <header class="header">
         <nav class="container nav">
             <div class="logo">
-                <a href="#home">
-                    <img src="assets/logo.png" alt="BVM ᴅᴇᴠ Logo" class="header-logo">
+                <a href="#home" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                    <img src="assets/logo-white.png" alt="BVM ᴅᴇᴠ Logo" class="header-logo">
+                    <span style="color: white; font-weight: 700; font-size: 1.2rem; letter-spacing: 1px;">BVM ᴅᴇᴠ</span>
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="active">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#projects">WORK</a></li>
+                <li><a href="#contact">CONTACTS</a></li>
             </ul>
-            <div class="nav-cta">
-                <div style="display: flex; align-items: center; gap: 2rem;">
-                    <a href="tel:+94724624285"
-                        style="color: var(--text-heading); text-decoration: none; font-weight: 700; display: flex; align-items: center; gap: 8px; font-size: 0.9rem;">
-                        <i data-lucide="phone" style="width: 18px; color: var(--primary);"></i>
-                        <span class="nav-phone">+94 72 462 4285</span>
+            <div class="nav-right" style="display: flex; gap: 15px; align-items: center;">
+                <a href="https://wa.me/94724624285" target="_blank" rel="noopener noreferrer" class="nav-call-btn" style="display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); color: white; padding: 8px 16px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 14px; border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s ease;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    +94 72 462 4285
+                </a>
+                <div class="nav-socials">
+                    <a href="https://www.linkedin.com/in/bvm-ᴅᴇᴠ-649692406" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                     </a>
-                    <a href="#contact" class="btn btn-primary">Get Started <i data-lucide="arrow-right"
-                            style="margin-left: 8px; width: 18px;"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61588870863030" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="https://www.instagram.com/bvmdev?igsh=cXduNmU2YTlndjhu" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
                 </div>
             </div>
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
@@ -80,37 +92,19 @@
     <main>
         <!-- Hero Section -->
         <section class="hero" id="home">
+        <canvas id="heroCanvas" class="hero-canvas"></canvas>
             <div class="container">
-                <div class="hero-grid">
-                    <div class="hero-content">
-                        <div class="experience-badge reveal">
-                            <i data-lucide="award"></i> Best IT Solutions 2026
-                        </div>
-                        <h1 class="reveal">
-                            Providing The Best <span style="color: var(--primary);">IT Solutions</span> For Your
-                            Business.
-                        </h1>
-                        <p class="reveal" style="transition-delay: 0.1s;">
-                            BVM ᴅᴇᴠ is a software development company dedicated to building modern, scalable, and high-performance digital solutions for businesses.
-                        </p>
-                        <div class="hero-btns reveal" style="transition-delay: 0.2s;">
-                            <a href="#services" class="btn btn-primary">Our Services <i data-lucide="chevron-right"
-                                    style="margin-left: 5px; width: 18px;"></i></a>
-                            <a href="#about" class="btn btn-outline" style="margin-left: 1rem;">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="hero-image-wrapper reveal reveal-scale">
-                        <img src="assets/team.png" alt="Team Work" class="hero-img">
-                        <div class="floating-card">
-                            <div
-                                style="width: 50px; height: 50px; background: var(--primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white;">
-                                <i data-lucide="check-circle"></i>
-                            </div>
-                            <div>
-                                <h4 style="margin: 0;">100% Success</h4>
-                                <p style="margin: 0; font-size: 0.8rem;">Project Satisfaction</p>
-                            </div>
-                        </div>
+                <div class="hero-content-center">
+                    <h1 class="reveal hero-title">
+                        Transforming businesses with <span class="gradient-text">Intelligent Solutions</span> and AI Engineering Services
+                    </h1>
+                    <p class="reveal hero-subtitle" style="transition-delay: 0.1s;">
+                        BVM ᴅᴇᴠ builds modern, scalable, and high-performance digital solutions tailored to the AI-first era.
+                    </p>
+                    <div class="hero-btns reveal" style="transition-delay: 0.2s;">
+                        <a href="#services" class="btn btn-primary">Our Services <i data-lucide="chevron-right"
+                                style="margin-left: 5px; width: 18px;"></i></a>
+                        <a href="#contact" class="btn btn-outline" style="margin-left: 1rem; border-color: rgba(255,255,255,0.3); color: white;">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -298,10 +292,6 @@
             </div>
         </section>
 
-
-
-
-
         <!-- FAQ Section -->
         <section class="faq" style="padding: 120px 0;">
             <div class="container" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem;">
@@ -314,7 +304,7 @@
                         alt="FAQ" style="width: 100%; border-radius: var(--border-radius);">
                 </div>
                 <div class="reveal reveal-right">
-                    <div class="faq-item reveal active">
+                    <div class="faq-item reveal faq-active">
                         <div class="faq-header">
                             <h4>How long does a typical project take?</h4>
                             <i data-lucide="chevron-down"></i>
@@ -324,7 +314,7 @@
                                 takes 8-12 weeks from design to deployment.</p>
                         </div>
                     </div>
-                    <div class="faq-item reveal">
+                    <div class="faq-item reveal faq-active">
                         <div class="faq-header">
                             <h4>Do you provide ongoing support?</h4>
                             <i data-lucide="chevron-down"></i>
@@ -334,7 +324,7 @@
                                 stay updated and secure.</p>
                         </div>
                     </div>
-                    <div class="faq-item reveal">
+                    <div class="faq-item reveal faq-active">
                         <div class="faq-header">
                             <h4>Can you help with app design too?</h4>
                             <i data-lucide="chevron-down"></i>
@@ -344,14 +334,13 @@
                                 beautiful interfaces.</p>
                         </div>
                     </div>
-                    <div class="faq-item reveal">
+                    <div class="faq-item reveal faq-active">
                         <div class="faq-header">
                             <h4>What technologies do you use?</h4>
                             <i data-lucide="chevron-down"></i>
                         </div>
                         <div class="faq-body">
-                            <p>We work with modern stacks including React, Next.js, Node.js, Python, TypeScript, Flutter, and cloud services
-                                like AWS and Google Cloud.</p>
+                            <p>We specialize in modern technologies including Angular, Python, TypeScript, React, and Next.js, along with advanced AI LLM integrations and intelligent automation solutions.</p>
                         </div>
                     </div>
                 </div>
@@ -381,7 +370,7 @@
                             <li style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
                                 <div
                                     style="width: 50px; height: 50px; background: var(--bg-soft); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary);">
-                                    <i data-lucide="phone"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                                 </div>
                                 <div>
                                     <p style="margin: 0; font-size: 0.8rem; color: var(--text-muted);">Phone Number</p>
@@ -431,9 +420,9 @@
                                     style="width: 18px; height: 18px; margin-top: 2px; accent-color: var(--primary); cursor: pointer; flex-shrink: 0;">
                                 <label for="terms"
                                     style="font-size: 0.9rem; color: var(--text-body); cursor: pointer; line-height: 1.5;">
-                                    I agree to the <a href="#"
+                                    I agree to the <a href="terms.html"
                                         style="color: var(--primary); font-weight: 700; text-decoration: underline;">Terms
-                                        & Conditions</a> and <a href="#"
+                                        & Conditions</a> and <a href="privacy.html"
                                         style="color: var(--primary); font-weight: 700; text-decoration: underline;">Privacy
                                         Policy</a> <span style="color: red;">*</span>
                                 </label>
@@ -470,7 +459,8 @@
                             <i data-lucide="mail" style="width: 16px; color: var(--primary);"></i> info@bvmdev.com
                         </a>
                         <a href="tel:+94724624285" style="color: rgba(255,255,255,0.7); text-decoration: none; display: flex; align-items: center; gap: 10px; font-size: 0.9rem;">
-                            <i data-lucide="phone" style="width: 16px; color: var(--primary);"></i> +94 72 462 4285
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="color: var(--primary);"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            +94 72 462 4285
                         </a>
                     </div>
                 </div>
@@ -497,16 +487,7 @@
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h4 style="color: white; margin-bottom: 2rem;">Newsletter</h4>
-                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 1.5rem;">Subscribe to get latest updates and
-                        news.</p>
-                    <div style="display: flex; gap: 10px;">
-                        <input type="email" placeholder="Email Address"
-                            style="padding: 12px; border-radius: 8px; border: none; flex: 1; background: rgba(255,255,255,0.1); color: white;">
-                        <button class="btn btn-primary" style="padding: 12px;"><i data-lucide="send"></i></button>
-                    </div>
-                </div>
+
             </div>
             <div style="text-align: center; padding-top: 30px; color: rgba(255,255,255,0.5); font-size: 0.9rem;">
                 &copy; 2026 BVM ᴅᴇᴠ. All rights reserved.
