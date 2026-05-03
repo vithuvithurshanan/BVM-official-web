@@ -138,6 +138,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- Get Service Auto-fill ---
+    const getServiceBtns = document.querySelectorAll('.get-service-btn');
+    const subjectField = document.getElementById('subject');
+
+    getServiceBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const serviceName = btn.getAttribute('data-service');
+            if (subjectField) {
+                subjectField.value = `Inquiry regarding ${serviceName}`;
+                // Optional: Focus the field to show it worked
+                subjectField.style.boxShadow = '0 0 0 2px var(--primary)';
+                setTimeout(() => subjectField.style.boxShadow = '', 2000);
+            }
+        });
+    });
+
     // --- Contact Form Handling (Formspree) ---
     const contactForm = document.getElementById('contact-form');
 
@@ -154,15 +170,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const firstName = document.getElementById('first-name').value.trim();
             const lastName  = document.getElementById('last-name').value.trim();
             const email     = document.getElementById('email').value.trim();
+            const subject   = document.getElementById('subject').value.trim();
             const message   = document.getElementById('message').value.trim();
 
             const formData = {
                 "First Name": firstName,
                 "Last Name":  lastName,
                 "Email Address": email,
+                "Subject": subject,
                 "Message":    message,
                 _replyto:   email,
-                _subject:   `New Enquiry from ${firstName} ${lastName}`,
+                _subject:   `New Enquiry: ${subject} from ${firstName} ${lastName}`,
             };
 
             try {
