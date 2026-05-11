@@ -257,6 +257,10 @@
         </div>
     </footer>
 
+    <a href="#" class="back-to-top" id="backToTop">
+        <i data-lucide="arrow-up"></i>
+    </a>
+
     <script src="main.js"></script>
     <script>
         lucide.createIcons();
@@ -271,6 +275,38 @@
                 l.classList.remove('active');
                 if (l.getAttribute('href').includes(current)) l.classList.add('active');
             });
+        });
+    </script>
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script>
+        window.botpress.init({
+            "botId": "52af9275-cd67-408c-9e9a-f35a4352c10e",
+            "configuration": {
+                "version": "v2",
+                "botName": "BVM",
+                "botAvatar": "assets/agenz-logo.png",
+                "fabImage": "assets/agenz-logo.png",
+                "website": {},
+                "email": {},
+                "phone": {},
+                "termsOfService": {},
+                "privacyPolicy": {},
+                "color": "#5c26ff",
+                "variant": "solid",
+                "headerVariant": "solid",
+                "themeMode": "light",
+                "fontFamily": "inter",
+                "radius": 4,
+                "feedbackEnabled": false,
+                "footer": "[⚡ by Botpress](https://botpress.com/?from=webchat)",
+                "soundEnabled": false,
+                "proactiveMessageEnabled": false,
+                "proactiveBubbleMessage": "Hi! 👋 Need help?",
+                "proactiveBubbleTriggerType": "afterDelay",
+                "proactiveBubbleDelayTime": 10,
+                "conversationHistory": false
+            },
+            "clientId": "ab083772-7255-48e8-9bc4-59cd4fd0a45a"
         });
     </script>
 </body>
