@@ -102,9 +102,8 @@
                         BVM ᴅᴇᴠ builds modern, scalable, and high-performance digital solutions tailored to the AI-first era.
                     </p>
                     <div class="hero-btns reveal" style="transition-delay: 0.2s;">
-                        <a href="#services" class="btn btn-primary">Our Services <i data-lucide="chevron-right"
+                        <a href="#services" class="btn btn-primary">Get Started <i data-lucide="chevron-right"
                                 style="margin-left: 5px; width: 18px;"></i></a>
-                        <a href="#contact" class="btn btn-outline" style="margin-left: 1rem; border-color: rgba(255,255,255,0.3); color: white;">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -491,7 +490,7 @@
                 </div>
 
             </div>
-            <div style="text-align: center; padding-top: 30px; color: rgba(255,255,255,0.5); font-size: 0.9rem;">
+            <div style="text-align: center; padding-top: 30px; color: rgba(255,255,255,0.5); font-size: 0.9rem; position: relative;">
                 &copy; 2026 BVM ᴅᴇᴠ. All rights reserved.
             </div>
         </div>
@@ -516,6 +515,38 @@
     <script src="main.js"></script>
     <script>
         lucide.createIcons();
+    </script>
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script>
+        window.botpress.init({
+            "botId": "52af9275-cd67-408c-9e9a-f35a4352c10e",
+            "configuration": {
+                "version": "v2",
+                "botName": "BVM",
+                "botAvatar": "assets/agenz-logo.png",
+                "fabImage": "assets/agenz-logo.png",
+                "website": {},
+                "email": {},
+                "phone": {},
+                "termsOfService": {},
+                "privacyPolicy": {},
+                "color": "#5c26ff",
+                "variant": "solid",
+                "headerVariant": "solid",
+                "themeMode": "light",
+                "fontFamily": "inter",
+                "radius": 4,
+                "feedbackEnabled": false,
+                "footer": "[⚡ by Botpress](https://botpress.com/?from=webchat)",
+                "soundEnabled": false,
+                "proactiveMessageEnabled": false,
+                "proactiveBubbleMessage": "Hi! 👋 Need help?",
+                "proactiveBubbleTriggerType": "afterDelay",
+                "proactiveBubbleDelayTime": 10,
+                "conversationHistory": false
+            },
+            "clientId": "ab083772-7255-48e8-9bc4-59cd4fd0a45a"
+        });
     </script>
 </body>
 
