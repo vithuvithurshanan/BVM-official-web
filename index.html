@@ -424,9 +424,9 @@
                                     style="width: 18px; height: 18px; margin-top: 2px; accent-color: var(--primary); cursor: pointer; flex-shrink: 0;">
                                 <label for="terms"
                                     style="font-size: 0.9rem; color: var(--text-body); cursor: pointer; line-height: 1.5;">
-                                    I agree to the <a href="terms.html"
+                                    I agree to the <a href="terms.html" target="_blank" rel="noopener noreferrer"
                                         style="color: var(--primary); font-weight: 700; text-decoration: underline;">Terms
-                                        & Conditions</a> and <a href="privacy.html"
+                                        & Conditions</a> and <a href="privacy.html" target="_blank" rel="noopener noreferrer"
                                         style="color: var(--primary); font-weight: 700; text-decoration: underline;">Privacy
                                         Policy</a> <span style="color: red;">*</span>
                                 </label>
@@ -521,6 +521,12 @@
     <script src="main.js"></script>
     <script>
         lucide.createIcons();
+        // Unregister any stale service workers from previous projects
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(regs => {
+                regs.forEach(reg => reg.unregister());
+            });
+        }
     </script>
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
     <script>
