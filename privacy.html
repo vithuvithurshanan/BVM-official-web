@@ -9,125 +9,10 @@
     <link rel="icon" type="image/png" href="assets/logo.png">
     <script src="https://unpkg.com/lucide@0.410.0/dist/umd/lucide.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --legal-bg: #f9fafb;
-            --legal-text: #4b5563;
-            --legal-heading: #111827;
-            --legal-accent: #0ea5e9;
-            --legal-border: #f3f4f6;
-        }
-
-        body {
-            background-color: var(--legal-bg);
-            color: var(--legal-text);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.7;
-        }
-
-        .main-wrapper {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 100px 20px;
-            display: grid;
-            grid-template-columns: 300px 1fr;
-            gap: 60px;
-        }
-
-        @media (max-width: 991px) {
-            .main-wrapper {
-                grid-template-columns: 1fr;
-            }
-            .sidebar { display: none; }
-        }
-
-        .sidebar {
-            position: sticky;
-            top: 120px;
-            height: fit-content;
-        }
-
-        .sidebar h4 {
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 1px;
-            color: #9ca3af;
-            margin-bottom: 20px;
-        }
-
-        .nav-link {
-            display: block;
-            padding: 12px 15px;
-            color: #6b7280;
-            text-decoration: none;
-            font-weight: 500;
-            border-radius: 8px;
-            transition: all 0.2s;
-            margin-bottom: 5px;
-        }
-
-        .nav-link:hover {
-            background: #fff;
-            color: var(--legal-accent);
-        }
-
-        .nav-link.active {
-            background: #fff;
-            color: var(--legal-heading);
-            font-weight: 700;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-        }
-
-        .content-card {
-            background: white;
-            padding: 60px;
-            border-radius: 16px;
-            border: 1px solid #e5e7eb;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
-        }
-
-        .policy-header {
-            margin-bottom: 50px;
-            border-bottom: 1px solid #f3f4f6;
-            padding-bottom: 30px;
-        }
-
-        .policy-header h1 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 3rem;
-            color: var(--legal-heading);
-            margin-bottom: 10px;
-            letter-spacing: -1px;
-        }
-
-        .last-updated {
-            color: #9ca3af;
-            font-size: 0.85rem;
-        }
-
-        h2 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 1.5rem;
-            color: var(--legal-heading);
-            margin: 60px 0 20px;
-            scroll-margin-top: 120px;
-        }
-
-        p { margin-bottom: 20px; }
-
-        .legal-box {
-            background: #f8fafc;
-            padding: 24px;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-            margin-top: 40px;
-        }
-
-        html { scroll-behavior: smooth; }
-    </style>
 </head>
 
-<body>
+<body class="legal-page">
+
     <!-- Header / Navigation -->
     <header class="header header-dark">
         <nav class="container nav">
@@ -169,46 +54,77 @@
         </nav>
     </header>
 
-    <div class="main-wrapper">
-        <aside class="sidebar">
-            <h4>Contents</h4>
-            <nav>
-                <a href="#intro" class="nav-link active">Introduction</a>
-                <a href="#collection" class="nav-link">Data Collection</a>
-                <a href="#usage" class="nav-link">Information Usage</a>
-                <a href="#security" class="nav-link">Data Security</a>
-                <a href="#cookies" class="nav-link">Cookie Policy</a>
-            </nav>
-        </aside>
+    <main>
+        <div class="legal-wrapper">
 
-        <div class="content-card">
-            <div class="policy-header">
-                <div class="last-updated">LAST UPDATED: MAY 02, 2024</div>
-                <h1>Privacy Policy</h1>
+            <!-- Sidebar Navigation -->
+            <aside class="legal-sidebar">
+                <h4>Contents</h4>
+                <nav>
+                    <a href="#collection" class="legal-nav-link active">Information We Collect</a>
+                    <a href="#security" class="legal-nav-link">Data Security</a>
+                    <a href="#rights" class="legal-nav-link">User Rights</a>
+                    <a href="#sharing" class="legal-nav-link">Data Sharing</a>
+                    <a href="#children" class="legal-nav-link">Children's Privacy</a>
+                    <a href="#breach" class="legal-nav-link">Breach Notification</a>
+                    <a href="#retention" class="legal-nav-link">Data Retention</a>
+                    <a href="#changes" class="legal-nav-link">Policy Changes</a>
+                    <a href="#contact" class="legal-nav-link">Contact Us</a>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="legal-card">
+                <div class="legal-header">
+                    <span class="legal-effective-date">Effective Date: May 3, 2026</span>
+                    <h1>Privacy Policy</h1>
+                    <p>BVM Dev Pvt Ltd ("we", "BVM Dev") highly prioritizes your data privacy. This policy explains how your information is handled when you use our software and services.</p>
+                </div>
+
+                <h2 id="collection">1. Information We Collect</h2>
+                <p><strong>Personal Information:</strong> Client name, email address, contact number, and billing details.</p>
+                <p><strong>Service Data:</strong> Business logic, database structures, and content provided by you for software development.</p>
+                <p><strong>Technical Logs:</strong> IP address, browser type, and usage statistics generated automatically while using the software.</p>
+
+                <h2 id="security">2. Data Security &amp; Storage</h2>
+                <p><strong>Encryption:</strong> All of your data is protected using industry-standard SSL/TLS encryption.</p>
+                <p><strong>Secure Storage:</strong> We only use highly secure cloud servers such as AWS (Amazon Web Services) or Google Cloud.</p>
+                <p><strong>Access Control:</strong> Strict technical controls are followed to ensure only authorized persons can access your data.</p>
+
+                <h2 id="rights">3. User Rights</h2>
+                <p><strong>Access &amp; Edit:</strong> You may request us at any time to view or make changes to your information.</p>
+                <p><strong>Right to Erasure:</strong> You have the right to completely delete your information from our systems (once the project is completed and dues are settled).</p>
+
+                <h2 id="sharing">4. Data Sharing &amp; Third-Parties</h2>
+                <p><strong>No Data Sale:</strong> We will not sell your information to any third party.</p>
+                <p><strong>Third-Party Services:</strong> Payment Gateways (Stripe/PayHere) and SMS APIs used in the software handle data according to their own privacy policies. BVM Dev Pvt Ltd is not responsible for their practices.</p>
+
+                <h2 id="children">5. Children's Privacy</h2>
+                <p>Our services are not intended for those under 18 years of age. If any such data is collected unknowingly, we will delete it immediately.</p>
+
+                <h2 id="breach">6. Data Breach Notification</h2>
+                <p>If any security breach occurs regarding your data, we will notify you via email within 72 hours.</p>
+
+                <h2 id="retention">7. Data Retention</h2>
+                <p>After the contract ends and all dues are settled, your data backups will be handed over to the client or safely deleted according to your request.</p>
+
+                <h2 id="changes">8. Changes to Policy</h2>
+                <p>Changes may be made to this privacy policy from time to time. When changes are made, the "Effective Date" will be updated.</p>
+
+                <h2 id="contact">9. Contact Us</h2>
+                <p>Please contact us for any doubts regarding this policy.</p>
+
+                <div class="legal-contact-box">
+                    <strong>Get in Touch</strong>
+                    <p>For any questions or concerns about this privacy policy, reach us at
+                        <a href="mailto:info@bvmdev.com">info@bvmdev.com</a>
+                        or call us at <strong>+94 72 462 4285</strong>.
+                    </p>
+                </div>
             </div>
 
-            <h2 id="intro">1. Introduction</h2>
-            <p>At BVM ᴅᴇᴠ, we are committed to protecting your personal information and your right to privacy. This privacy policy describes how we collect, use, and share your personal information when you use our website or engage with our services.</p>
-
-            <h2 id="collection">2. Data Collection</h2>
-            <p>We collect personal information that you voluntarily provide to us when you express an interest in obtaining information about us or our products and services, when you participate in activities on the Website or otherwise when you contact us.</p>
-            <p>The personal information we collect depends on the context of your interactions with us and the Website, the choices you make and the products and features you use.</p>
-
-            <h2 id="usage">3. Information Usage</h2>
-            <p>We use personal information collected via our Website for a variety of business purposes described below. We process your personal information for these purposes in reliance on our legitimate business interests, in order to enter into or perform a contract with you, with your consent, and/or for compliance with our legal obligations.</p>
-
-            <h2 id="security">4. Data Security</h2>
-            <p>We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure.</p>
-
-            <h2 id="cookies">5. Cookie Policy</h2>
-            <p>We may use cookies and similar tracking technologies to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Policy.</p>
-
-            <div class="legal-box">
-                <strong>Contact Us</strong><br>
-                For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at <strong>info@bvmdev.com</strong>
-            </div>
         </div>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -264,16 +180,18 @@
     <script src="main.js"></script>
     <script>
         lucide.createIcons();
-        const links = document.querySelectorAll('.nav-link');
-        const sections = document.querySelectorAll('h2[id]');
+
+        // Scroll spy for sidebar
+        const navLinks = document.querySelectorAll('.legal-nav-link');
+        const sections = document.querySelectorAll('.legal-card h2[id]');
         window.addEventListener('scroll', () => {
-            let current = '';
+            let current = 'collection';
             sections.forEach(s => {
-                if (pageYOffset >= (s.offsetTop - 150)) current = s.getAttribute('id');
+                if (window.pageYOffset >= (s.offsetTop - 150)) current = s.getAttribute('id');
             });
-            links.forEach(l => {
+            navLinks.forEach(l => {
                 l.classList.remove('active');
-                if (l.getAttribute('href').includes(current)) l.classList.add('active');
+                if (l.getAttribute('href') === '#' + current) l.classList.add('active');
             });
         });
     </script>
