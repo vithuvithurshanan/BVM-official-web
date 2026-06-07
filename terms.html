@@ -9,92 +9,10 @@
     <link rel="icon" type="image/png" href="assets/logo.png">
     <script src="https://unpkg.com/lucide@0.410.0/dist/umd/lucide.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --legal-bg: #f8fafc;
-            --legal-text: #334155;
-            --legal-heading: #0f172a;
-            --legal-accent: #2563eb;
-            --legal-border: #e2e8f0;
-        }
-
-        body {
-            background-color: var(--legal-bg);
-            color: var(--legal-text);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-        }
-
-        .policy-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 80px 20px;
-        }
-
-        .policy-card {
-            background: white;
-            padding: 60px;
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            border: 1px solid var(--legal-border);
-        }
-
-        .policy-header {
-            border-bottom: 2px solid #f1f5f9;
-            margin-bottom: 40px;
-            padding-bottom: 30px;
-        }
-
-        .policy-header h1 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 2.5rem;
-            color: var(--legal-heading);
-            margin-bottom: 10px;
-        }
-
-        .last-updated {
-            color: #64748b;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        h2 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 1.5rem;
-            color: var(--legal-heading);
-            margin: 40px 0 20px;
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-
-        .section-number {
-            color: var(--legal-accent);
-            font-weight: 700;
-            margin-right: 10px;
-        }
-
-        ol {
-            padding-left: 20px;
-            margin-bottom: 20px;
-        }
-
-        li {
-            margin-bottom: 12px;
-        }
-
-        .legal-footer {
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 1px solid var(--legal-border);
-            font-size: 0.9rem;
-            color: #64748b;
-        }
-    </style>
 </head>
 
-<body>
+<body class="legal-page">
+
     <!-- Header / Navigation -->
     <header class="header header-dark">
         <nav class="container nav">
@@ -116,7 +34,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                     +94 72 462 4285
                 </a>
-                <div class="nav-socials">
+                <div class="nav-socials" style="display: flex; gap: 12px;">
                     <a href="https://www.linkedin.com/in/bvm-ᴅᴇᴠ-649692406" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                     </a>
@@ -136,68 +54,108 @@
         </nav>
     </header>
 
-    <!-- Back Button -->
    
 
-    <div class="policy-container">
-        <div class="policy-card">
-            <div class="policy-header">
-                <h1>Terms & Conditions</h1>
-                <div class="last-updated">Effective Date: May 02, 2024</div>
+    <main>
+        <div class="legal-wrapper">
+
+            <!-- Sidebar Navigation -->
+            <aside class="legal-sidebar">
+                <h4>Contents</h4>
+                <nav>
+                    <a href="#accounts" class="legal-nav-link active">User Accounts</a>
+                    <a href="#payment" class="legal-nav-link">Payment & Delivery</a>
+                    <a href="#ownership" class="legal-nav-link">Ownership & License</a>
+                    <a href="#obligations" class="legal-nav-link">Client Obligations</a>
+                    <a href="#confidentiality" class="legal-nav-link">Confidentiality</a>
+                    <a href="#amc" class="legal-nav-link">Maintenance & Support</a>
+                    <a href="#nonsolicitation" class="legal-nav-link">Staff Protection</a>
+                    <a href="#misuse" class="legal-nav-link">Software Misuse</a>
+                    <a href="#liability" class="legal-nav-link">Limitation of Liability</a>
+                    <a href="#forcemajeure" class="legal-nav-link">Force Majeure</a>
+                    <a href="#termination" class="legal-nav-link">Termination</a>
+                    <a href="#dispute" class="legal-nav-link">Dispute Resolution</a>
+                    <a href="#sourcecode" class="legal-nav-link">Source Code</a>
+                    <a href="#refund" class="legal-nav-link">Refund Policy</a>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="legal-card">
+                <div class="legal-header">
+                    <span class="legal-effective-date">Effective Date: May 3, 2026</span>
+                    <h1>Terms &amp; Conditions</h1>
+                    <p>By using our website and engaging our services, you agree to be bound by the following terms and conditions. Please read them carefully before proceeding.</p>
+                </div>
+
+                <h2 id="accounts">1. User Accounts</h2>
+                <p><strong>Account Security:</strong> Users are solely responsible for maintaining the confidentiality of their account credentials and passwords.</p>
+                <p><strong>Unauthorized Access:</strong> If any unauthorized access occurs within an account, BVM Dev Pvt Ltd must be notified immediately.</p>
+
+                <h2 id="payment">2. Payment and Delivery</h2>
+                <p><strong>Staged Payments:</strong> Project work will be divided into several stages (Milestones). Payment for each stage must be settled upon its completion.</p>
+                <p><strong>Late Payment:</strong> A monthly interest of 2% will be added to delayed payments.</p>
+                <p><strong>Taxes:</strong> Quotation prices do not include taxes (VAT/SSCL). If taxes apply, they will be added to the invoice.</p>
+                <p><strong>Refund Policy:</strong> Advance payments or milestone payments made after the project has commenced are non-refundable.</p>
+                <p><strong>Project Timeline:</strong> Delivery dates are approximate estimates. If client feedback is delayed, the delivery date will shift accordingly.</p>
+
+                <h2 id="ownership">3. Ownership and License</h2>
+                <p><strong>IP Rights Transfer:</strong> Intellectual Property (IP) rights will only transfer to the client after full payment is completed.</p>
+                <p><strong>Portfolio Right:</strong> We reserve the right to showcase the completed work in our professional portfolio.</p>
+
+                <h2 id="obligations">4. Client Obligations</h2>
+                <p><strong>Data Accuracy:</strong> The client is responsible for the accuracy of the information and materials provided.</p>
+                <p><strong>Acceptance Testing:</strong> The client must test the software and provide "Acceptance" within 7 days of final delivery.</p>
+                <p><strong>Revisions:</strong> A maximum of 2 rounds of minor revisions are included in the project scope. Any changes beyond this will be treated as a new feature.</p>
+                <p><strong>Operational Costs:</strong> Domain, Hosting, and API subscription fees must be paid by the client.</p>
+
+                <h2 id="confidentiality">5. Confidentiality</h2>
+                <p>Both parties must not disclose business secrets or technical information related to the project to any third party.</p>
+
+                <h2 id="amc">6. Maintenance and Support (AMC)</h2>
+                <p><strong>Scope:</strong> Annual Maintenance Contract (AMC) services include only bug fixes and server maintenance.</p>
+                <p><strong>Response Time:</strong> A response will be provided within 24–48 working hours for reported issues.</p>
+                <p><strong>Operational Hours:</strong> Monday to Saturday (08:30 AM – 05:30 PM).</p>
+
+                <h2 id="nonsolicitation">7. Staff Protection (Non-Solicitation)</h2>
+                <p>During the contract period and for 1 year following its conclusion, the client shall not directly hire our staff or contractors.</p>
+
+                <h2 id="misuse">8. Software Misuse</h2>
+                <p>BVM Dev Pvt Ltd is not responsible if the software is used for illegal activities (hacking, spamming, etc.).</p>
+
+                <h2 id="liability">9. Limitation of Liability</h2>
+                <p>BVM Dev Pvt Ltd is not liable for indirect business losses. Liability shall not exceed the total amount paid by you.</p>
+
+                <h2 id="forcemajeure">10. Force Majeure</h2>
+                <p>BVM Dev Pvt Ltd is not responsible if services are interrupted due to natural disasters, internet outages, or government regulations.</p>
+
+                <h2 id="termination">11. Termination</h2>
+                <p><strong>Notice Period:</strong> A 30-day written notice must be provided to cancel the contract.</p>
+                <p><strong>Payment on Termination:</strong> If the contract is canceled, the client must pay for all work completed up to the date of cancellation.</p>
+
+                <h2 id="dispute">12. Dispute Resolution and Law</h2>
+                <p><strong>Sri Lankan Law:</strong> This agreement shall be governed and interpreted in accordance with the laws of Sri Lanka.</p>
+                <p><strong>Arbitration:</strong> Any disputes arising from this agreement shall be resolved through mutual discussion or by a professional arbitrator in accordance with Sri Lankan law.</p>
+                <p><strong>Jurisdiction:</strong> Any legal matters related to this agreement shall be subject to the applicable courts and legal jurisdiction of Sri Lanka.</p>
+
+                <h2 id="sourcecode">13. Source Code &amp; Third-Party Modifications</h2>
+                <p>Once the project source code or system access is handed over to the client, BVM Dev Pvt Ltd will not be responsible for any issues, damages, bugs, or data loss caused by accidental deletion, modification, or misuse by the client or any third party.</p>
+                <p>If the client allows another developer, company, or freelancer to modify, update, or maintain the software without our involvement, BVM Dev Pvt Ltd will not be liable for any resulting technical issues, security problems, or system failures.</p>
+                <p>Any support, recovery, bug fixing, or redevelopment work required after unauthorized modifications will be treated as a separate paid service.</p>
+
+                <h2 id="refund">14. Refund &amp; External Changes</h2>
+                <p>Payments made for completed milestones, development work, customizations, or support services are strictly non-refundable.</p>
+                <p>If the software is modified, updated, or handled by another party after delivery, BVM Dev Pvt Ltd shall not be obligated to provide refunds, compensation, or free maintenance for any issues arising thereafter.</p>
+                <p>Any additional fixes or restoration services requested after third-party intervention may incur separate charges.</p>
+
+                <div class="legal-contact-box">
+                    <strong>Questions about these Terms?</strong>
+                    <p>Contact us at <a href="mailto:info@bvmdev.com">info@bvmdev.com</a> or call <strong>+94 72 462 4285</strong>.</p>
+                </div>
             </div>
 
-            <p>Welcome to <strong>BVM ᴅᴇᴠ Digital Solutions</strong>. By using our website and services, you agree to comply with and be bound by the following terms and conditions of use, which govern BVM ᴅᴇᴠ's relationship with you in relation to this website.</p>
-
-            <h2><span class="section-number">1.</span> General Terms</h2>
-            <p>The term 'BVM ᴅᴇᴠ' or 'us' or 'we' refers to the owner of the website. The term 'you' refers to the user or viewer of our website. The use of this website is subject to the following terms:</p>
-            <ol>
-                <li>The content of the pages of this website is for your general information and use only. It is subject to change without notice.</li>
-                <li>Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose.</li>
-                <li>Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable.</li>
-            </ol>
-
-            <h2><span class="section-number">2.</span> Intellectual Property</h2>
-            <p>This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.</p>
-
-            <h2><span class="section-number">3.</span> Professional Services</h2>
-            <p>BVM ᴅᴇᴠ provides professional digital services. Each project is governed by a separate Service Level Agreement (SLA) or Contract. These general terms do not override specific project-based contracts.</p>
-
-            <h2><span class="section-number">4.</span> Limitation of Liability</h2>
-            <p>In no event shall BVM ᴅᴇᴠ be liable for any special, direct, indirect, consequential, or incidental damages or any damages whatsoever, whether in an action of contract, negligence or other tort, arising out of or in connection with the use of the Service or the contents of the Service.</p>
-             
-            <h2><span class="section-number">5.</span> Force Majeurey</h2>
-            <p>​BVM Pvt Ltd is not responsible if services are interrupted due to natural disasters, internet outages, or government regulations.</p>
-
-             <h2><span class="section-number">6.</span> Termination</h2>
-            <p><b>​Notice Period:</b> A 30-day written notice must be provided to cancel the contract.​Payment on Termination: If the contract is canceled,</p>
-            <p> the client must pay for all work completed up to the date of cancellation.</p>
-
-             <h2><span class="section-number">7.</span> Dispute Resolution and Law</h2>
-            <p><b>Sri Lankan Law:</b> This agreement shall be governed and interpreted in accordance with the laws of Sri Lanka.</p>
-            <p><b>Arbitration:</b> Any disputes arising from this agreement shall be resolved through mutual discussion or by a professional arbitrator in accordance with Sri Lankan law.</p>
-            <p><b>Jurisdiction:</b> Any legal matters related to this agreement shall be subject to the applicable courts and legal jurisdiction of Sri Lanka.</p>
-
-             <h2><span class="section-number">8.</span> Source Code & Third-Party Modifications</h2>
-            <p>Once the project source code or system access is handed over to the client, BVM Dev Pvt Ltd will not be responsible for any issues, damages, bugs, or data loss caused by accidental deletion, modification, or misuse by the client or any third party.</p>
-            <p>If the client allows another developer, company, or freelancer to modify, update, or maintain the software without our involvement, BVM Dev Pvt Ltd will not be liable for any resulting technical issues, security problems, or system failures.</p>
-            <p>Any support, recovery, bug fixing, or redevelopment work required after unauthorized modifications will be treated as a separate paid service. </p>
-
-             <h2><span class="section-number">9.</span> Refund & External Changes</h2>
-            <p>Payments made for completed milestones, development work, customizations, or support services are strictly non-refundable.</p>
-            <p>If the software is modified, updated, or handled by another party after delivery, BVM Dev Pvt Ltd shall not be obligated to provide refunds, compensation, or free maintenance for any issues arising thereafter.</p>
-            <p>Any additional fixes or restoration services requested after third-party intervention may incur separate charges.</p>
-
-             <h2><span class="section-number">10.</span>  Maintenance and Support (AMC)</h2>
-            <p><b>​Scope:</b> Annual Maintenance Contract (AMC) services include only bug fixes and server maintenance</p>
-            <p><b>​Response Time:</b> A response will be provided within 24-48 working hours for reported issues.</p>
-            <p><b>​Operational Hours:</b> Monday to Saturday (08:30 AM - 05:30 PM).</p>
-
-            
-            <div class="legal-footer">
-                If you have any questions about these Terms, please contact us at <strong>info@bvmdev.com</strong>
-            </div>
         </div>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -251,7 +209,23 @@
     </a>
 
     <script src="main.js"></script>
-    <script>lucide.createIcons();</script>
+    <script>
+        lucide.createIcons();
+
+        // Scroll spy for sidebar
+        const navLinks = document.querySelectorAll('.legal-nav-link');
+        const sections = document.querySelectorAll('.legal-card h2[id]');
+        window.addEventListener('scroll', () => {
+            let current = 'accounts';
+            sections.forEach(s => {
+                if (window.pageYOffset >= (s.offsetTop - 150)) current = s.getAttribute('id');
+            });
+            navLinks.forEach(l => {
+                l.classList.remove('active');
+                if (l.getAttribute('href') === '#' + current) l.classList.add('active');
+            });
+        });
+    </script>
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
     <script>
         window.botpress.init({
