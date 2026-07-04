@@ -8,21 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Preloader Removal ---
     const preloader = document.getElementById('preloader');
     if (preloader) {
-        const hidePreloader = () => {
+        // Letters finish at ~1.6s (last letter 0.8s delay + 0.8s duration), hide after a brief pause
+        setTimeout(() => {
             preloader.style.opacity = '0';
             preloader.style.visibility = 'hidden';
-            document.body.style.overflow = 'visible';
-            document.body.style.pointerEvents = 'auto';
-        };
-
-        window.addEventListener('load', () => {
-            setTimeout(hidePreloader, 2500); 
-        });
-
-        // Fallback: Force hide after 6 seconds if load event doesn't fire
-        setTimeout(hidePreloader, 6000);
+        }, 2000);
     }
-    
+
     // --- Scroll Reveal Animation ---
     const revealElements = document.querySelectorAll('.reveal');
     
