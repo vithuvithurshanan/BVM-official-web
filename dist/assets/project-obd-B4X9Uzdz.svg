@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A1245"/>
+      <stop offset="1" stop-color="#5C27FE"/>
+    </linearGradient>
+    <linearGradient id="gauge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00D1FF"/>
+      <stop offset="1" stop-color="#5C27FE"/>
+    </linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="740" cy="50" r="150" fill="#00D1FF" opacity="0.10"/>
+  <circle cx="50" cy="480" r="140" fill="#fff" opacity="0.06"/>
+
+  <!-- laptop-style app window -->
+  <g filter="url(#sh)">
+    <rect x="60" y="46" width="680" height="408" rx="18" fill="#0f0b2e"/>
+  </g>
+  <rect x="60" y="46" width="680" height="40" rx="18" fill="#171245"/>
+  <rect x="60" y="68" width="680" height="18" fill="#171245"/>
+  <circle cx="84" cy="66" r="6" fill="#ff6b6b"/><circle cx="104" cy="66" r="6" fill="#ffd166"/><circle cx="124" cy="66" r="6" fill="#4ade80"/>
+  <text x="400" y="71" text-anchor="middle" font-size="12" fill="#a9a3d6">OBD-II  DTC Manager  -  Connected</text>
+  <circle cx="676" cy="66" r="5" fill="#4ade80"/>
+  <text x="688" y="70" font-size="11" fill="#4ade80">ELM327</text>
+
+  <!-- left: vehicle + gauge -->
+  <g>
+    <rect x="80" y="104" width="230" height="330" rx="14" fill="#171245"/>
+    <text x="98" y="130" font-size="12" font-weight="700" fill="#fff">Vehicle</text>
+    <text x="98" y="150" font-size="11" fill="#a9a3d6">Toyota Aqua 2016  -  1NZ-FXE</text>
+
+    <!-- car silhouette -->
+    <g transform="translate(96 168)" fill="none" stroke="#00D1FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 62 L22 34 Q26 26 36 26 L116 26 Q126 26 132 34 L150 56 Q160 58 160 66 L160 74 L8 74 Z"/>
+      <path d="M40 30 L52 50 L112 50 L100 30"/>
+      <circle cx="42" cy="76" r="11" fill="#0f0b2e"/>
+      <circle cx="128" cy="76" r="11" fill="#0f0b2e"/>
+    </g>
+
+    <!-- gauge -->
+    <path d="M118 372 A52 52 0 0 1 272 372" transform="translate(-20 0)" fill="none" stroke="#2a2470" stroke-width="12" stroke-linecap="round"/>
+    <path d="M118 372 A52 52 0 0 1 216 322" transform="translate(-20 0)" fill="none" stroke="url(#gauge)" stroke-width="12" stroke-linecap="round"/>
+    <text x="195" y="368" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">3 DTCs</text>
+    <text x="195" y="388" text-anchor="middle" font-size="10" fill="#a9a3d6">stored fault codes</text>
+    <rect x="100" y="402" width="190" height="20" rx="10" fill="#22c55e" opacity="0.15"/>
+    <text x="195" y="416" text-anchor="middle" font-size="10" fill="#4ade80" font-weight="600">Engine ON  -  idle 780 rpm</text>
+  </g>
+
+  <!-- right: code list -->
+  <text x="334" y="128" font-size="13" font-weight="700" fill="#fff">Diagnostic Trouble Codes</text>
+  <g font-size="12">
+    <rect x="334" y="142" width="386" height="54" rx="12" fill="#171245"/>
+    <rect x="348" y="156" width="56" height="26" rx="8" fill="#ef4444" opacity="0.2"/>
+    <text x="376" y="174" text-anchor="middle" font-weight="800" fill="#f87171">P0300</text>
+    <text x="418" y="164" fill="#fff" font-weight="600">Random Misfire Detected</text>
+    <text x="418" y="181" font-size="10" fill="#a9a3d6">Powertrain  -  Confirmed</text>
+    <rect x="644" y="156" width="62" height="26" rx="13" fill="#5C27FE"/>
+    <text x="675" y="173" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Edit</text>
+
+    <rect x="334" y="204" width="386" height="54" rx="12" fill="#171245"/>
+    <rect x="348" y="218" width="56" height="26" rx="8" fill="#f59e0b" opacity="0.2"/>
+    <text x="376" y="236" text-anchor="middle" font-weight="800" fill="#fbbf24">P0420</text>
+    <text x="418" y="226" fill="#fff" font-weight="600">Catalyst Efficiency Low</text>
+    <text x="418" y="243" font-size="10" fill="#a9a3d6">Powertrain  -  Pending</text>
+    <rect x="644" y="218" width="62" height="26" rx="13" fill="#5C27FE"/>
+    <text x="675" y="235" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Edit</text>
+
+    <rect x="334" y="266" width="386" height="54" rx="12" fill="#171245"/>
+    <rect x="348" y="280" width="56" height="26" rx="8" fill="#00D1FF" opacity="0.18"/>
+    <text x="376" y="298" text-anchor="middle" font-weight="800" fill="#38e1ff">P0171</text>
+    <text x="418" y="288" fill="#fff" font-weight="600">System Too Lean (Bank 1)</text>
+    <text x="418" y="305" font-size="10" fill="#a9a3d6">Fuel trim  -  History</text>
+    <rect x="644" y="280" width="62" height="26" rx="13" fill="#5C27FE"/>
+    <text x="675" y="297" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Edit</text>
+  </g>
+
+  <!-- editor row -->
+  <rect x="334" y="336" width="386" height="98" rx="12" fill="#171245"/>
+  <text x="350" y="360" font-size="12" font-weight="700" fill="#fff">Change / Clear Code</text>
+  <rect x="350" y="372" width="120" height="34" rx="8" fill="#0f0b2e" stroke="#3b34a0"/>
+  <text x="410" y="394" text-anchor="middle" font-size="14" font-weight="700" fill="#38e1ff">P0300</text>
+  <text x="488" y="394" font-size="16" fill="#a9a3d6">&#8594;</text>
+  <rect x="510" y="372" width="120" height="34" rx="8" fill="#0f0b2e" stroke="#3b34a0"/>
+  <text x="570" y="394" text-anchor="middle" font-size="14" font-weight="700" fill="#4ade80">Cleared</text>
+  <rect x="644" y="372" width="62" height="34" rx="10" fill="#22c55e"/>
+  <text x="675" y="394" text-anchor="middle" font-size="12" font-weight="800" fill="#052e16">Apply</text>
+  <text x="350" y="424" font-size="10" fill="#a9a3d6">Reads, edits and clears stored codes over Bluetooth / USB</text>
+</svg>
