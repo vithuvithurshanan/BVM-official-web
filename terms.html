@@ -208,9 +208,9 @@
         <i data-lucide="arrow-up"></i>
     </a>
 
-    <script src="main.js"></script>
+    <script type="module" src="/main.js"></script>
     <script>
-        lucide.createIcons();
+        if (window.lucide) lucide.createIcons();
 
         // Scroll spy for sidebar
         const navLinks = document.querySelectorAll('.legal-nav-link');
@@ -228,13 +228,13 @@
     </script>
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
     <script>
-        window.botpress.init({
+        window.botpress && window.botpress.init({
             "botId": "52af9275-cd67-408c-9e9a-f35a4352c10e",
             "configuration": {
                 "version": "v2",
                 "botName": "BVM",
-                "botAvatar": "assets/agenz-logo.png",
-                "fabImage": "assets/agenz-logo.png",
+                "botAvatar": "https://www.bvmdev.com/assets/agenz-logo.png",
+                "fabImage": "https://www.bvmdev.com/assets/agenz-logo.png",
                 "website": {},
                 "email": {},
                 "phone": {},

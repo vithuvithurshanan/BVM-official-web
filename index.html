@@ -14,7 +14,7 @@
     <meta property="og:title" content="BVM ᴅᴇᴠ.com | Innovating the Future of Code">
     <meta property="og:description"
         content="Premier software development company specializing in web, app, and AI solutions.">
-    <meta property="og:image" content="assets/og-image.png">
+    <meta property="og:image" content="https://www.bvmdev.com/assets/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -22,7 +22,7 @@
     <meta property="twitter:title" content="BVM ᴅᴇᴠ.com | Innovating the Future of Code">
     <meta property="twitter:description"
         content="Premier software development company specializing in web, app, and AI solutions.">
-    <meta property="twitter:image" content="assets/og-image.png">
+    <meta property="twitter:image" content="https://www.bvmdev.com/assets/logo.png">
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assets/logo.png">
@@ -193,7 +193,7 @@
             <div class="container about-flex">
                 <div class="about-image reveal reveal-left" style="position: relative;">
                     <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
-                        alt="About Synvo"
+                        alt="BVM Dev team working together"
                         style="width: 100%; border-radius: var(--border-radius); border-bottom-right-radius: 100px;">
                 </div>
                 <div class="about-text reveal reveal-right">
@@ -409,7 +409,7 @@
                                     style="background: var(--bg-soft); border: none;">
                             </div>
                             <div class="form-group">
-                                <label for="message">Message</label>
+                                <label for="message">Message <span style="color: red;">*</span></label>
                                 <textarea id="message" name="Message" rows="4" placeholder="How can we help?" required
                                     style="background: var(--bg-soft); border: none;"></textarea>
                             </div>
@@ -482,10 +482,10 @@
                 <div>
                     <h4 style="color: white; margin-bottom: 2rem;">Services</h4>
                     <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
-                        <li><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Web Dev</a></li>
-                        <li><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Mobile Apps</a>
+                        <li><a href="#services" style="color: rgba(255,255,255,0.7); text-decoration: none;">Web Dev</a></li>
+                        <li><a href="#services" style="color: rgba(255,255,255,0.7); text-decoration: none;">Mobile Apps</a>
                         </li>
-                        <li><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">UI/UX Design</a>
+                        <li><a href="#services" style="color: rgba(255,255,255,0.7); text-decoration: none;">UI/UX Design</a>
                         </li>
                     </ul>
                 </div>
@@ -513,9 +513,9 @@
         <button class="toast-close" id="toastClose">&times;</button>
     </div>
 
-    <script src="main.js"></script>
+    <script type="module" src="/main.js"></script>
     <script>
-        lucide.createIcons();
+        if (window.lucide) lucide.createIcons();
         // Unregister any stale service workers from previous projects
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.getRegistrations().then(regs => {
@@ -525,13 +525,13 @@
     </script>
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
     <script>
-        window.botpress.init({
+        window.botpress && window.botpress.init({
             "botId": "52af9275-cd67-408c-9e9a-f35a4352c10e",
             "configuration": {
                 "version": "v2",
                 "botName": "BVM",
-                "botAvatar": "assets/agenz-logo.png",
-                "fabImage": "assets/agenz-logo.png",
+                "botAvatar": "https://www.bvmdev.com/assets/agenz-logo.png",
+                "fabImage": "https://www.bvmdev.com/assets/agenz-logo.png",
                 "website": {},
                 "email": {},
                 "phone": {},

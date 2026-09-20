@@ -49,10 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Dynamic Header Background ---
     const header = document.querySelector('.header');
-    
+
     window.addEventListener('scroll', () => {
+        if (!header) return;
         const scrollY = window.scrollY;
-        
+
         if (scrollY < 100) {
             // Initial State: Transparent & Absolute
             header.classList.remove('sticky-active', 'sticky-hide');
@@ -103,13 +104,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const href = link.getAttribute('href');
             
             // Close mobile menu on link click
-            if (navLinksList.classList.contains('active')) {
+            if (menuToggle && navLinksList && navLinksList.classList.contains('active')) {
                 menuToggle.classList.remove('active');
                 navLinksList.classList.remove('active');
                 document.body.style.overflow = 'visible';
             }
 
-            if (href.startsWith('#')) {
+            if (href && href.length > 1 && href.startsWith('#')) {
                 e.preventDefault();
                 const targetId = href.substring(1);
                 const targetElement = document.getElementById(targetId);
@@ -220,8 +221,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- FAQ Accordion ---
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
-        const header = item.querySelector('.faq-header');
-        header.addEventListener('click', () => {
+        const faqHeader = item.querySelector('.faq-header');
+        if (!faqHeader) return;
+        faqHeader.addEventListener('click', () => {
             item.classList.toggle('faq-active');
         });
     });
@@ -257,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 3D Particle Swarm Animation (Dala Style) ---
     const canvas = document.getElementById('heroCanvas');
-    if (canvas) {
+    if (canvas && document.querySelector('.hero')) {
         const ctx = canvas.getContext('2d');
         let width = canvas.width = window.innerWidth;
         let height = canvas.height = document.querySelector('.hero').offsetHeight;
@@ -357,7 +359,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const dy = mouse.y - baseProjY;
                     const dist = Math.sqrt(dx * dx + dy * dy);
                     
-                    if (dist < 250) {
+                    if (dist > 0 && dist < 250) {
                         const force = (250 - dist) / 250;
                         // Push outward violently
                         forceX = -(dx / dist) * force * 300;
